@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- ===================================================== -->
+    <!-- Project Information -->
+    <!-- ===================================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>10 Month Anniversary ❤️</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css">
+
+</head>
+
+<body>
+
+<!-- ===================================================== -->
+<!-- Chapter 1 - Anniversary Lock -->
+<!-- ===================================================== -->
+
+<div id="lockScreen">
+
+    <div class="ui">
+
+        <!-- Date Input -->
+
+        <div class="date-box">
+
+            <img
+                class="date-heart"
+                src="images/Heart.png"
+                alt="Heart">
+
+            <input
+                id="dateInput"
+                type="text"
+                placeholder="Anni date"
+                readonly>
+
+        </div>
+
+        <!-- Number Pad -->
+
+        <div class="keypad">
+
+            <button class="num-btn" data-value="1">1</button>
+            <button class="num-btn" data-value="2">2</button>
+            <button class="num-btn" data-value="3">3</button>
+
+            <button class="num-btn" data-value="4">4</button>
+            <button class="num-btn" data-value="5">5</button>
+            <button class="num-btn" data-value="6">6</button>
+
+            <button class="num-btn" data-value="7">7</button>
+            <button class="num-btn" data-value="8">8</button>
+            <button class="num-btn" data-value="9">9</button>
+
+            <button class="num-btn" data-value="/">/</button>
+            <button class="num-btn" data-value="0">0</button>
+
+            <button
+                id="fingerprintBtn"
+                class="fingerprint-btn">
+
+                <img
+                    src="images/fingerprint.png"
+                    alt="Fingerprint">
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- ===================================================== -->
+<!-- Chapter 2 - Flower Animation -->
+<!-- ===================================================== -->
+
+<div id="flowerOverlay">
+
+    <img
+        class="leftFlowers"
+        src="images/flower-left.png"
+        alt="Flowers">
+
+    <img
+        class="rightFlowers"
+        src="images/flower-right.png"
+        alt="Flowers">
+
+</div>
+
+
+
+<!-- ===================================================== -->
+<!-- Chapter 3 - White Transition -->
+<!-- ===================================================== -->
+
+<div id="fadeScreen"></div>
+
+
+
+<!-- ===================================================== -->
+<!-- Chapter 4 - House -->
+<!-- ===================================================== -->
+
+<div id="houseScene">
+
+    <img
+        id="scene"
+        src="images/Cam0_Default.png"
+        draggable="false"
+        alt="House">
+
+</div>
+
+
+
+<!-- ===================================================== -->
+<!-- Chapter 4.1 - Navigation -->
+<!-- ===================================================== -->
+
+<div id="houseMenu">
+
+    <div
+        class="room active"
+        data-scene="Cam0_Default.png">
+
+        Entrance
+
+    </div>
+
+    <div
+        class="room"
+        data-scene="Cam1_Door.png">
+
+        Door
+
+    </div>
+
+    <div
+        class="room"
+        data-scene="Cam2_TV.png">
+
+        TV
+
+    </div>
+
+    <div
+        class="room"
+        data-scene="Cam2_TV_Sit.png">
+
+        Sofa
+
+    </div>
+
+    <div
+        class="room"
+        data-scene="Cam3_LR.png">
+
+        Living Room
+
+    </div>
+
+    <div
+        class="room"
+        data-scene="Cam4_Bedroom.png">
+
+        Bedroom
+
+    </div>
+
+    <div
+        class="room"
+        data-scene="Cam5_Kitchen.png">
+
+        Kitchen
+
+    </div>
+
+</div>
+
+
+
+<!-- ===================================================== -->
+<!-- Chapter 5 - Door Interaction -->
+<!-- ===================================================== -->
+
+<div id="openDoor">
+
+    OPEN
+
+</div>
+
+
+
+<!-- ===================================================== -->
+<!-- Chapter 6 - Scene 1 -->
+<!-- ===================================================== -->
+
+<video
+    id="scene1Video"
+    preload="auto">
+
+    <source
+        src="video/Scene1.mp4"
+        type="video/mp4">
+
+</video>
+
+
+
+<!-- ===================================================== -->
+<!-- Chapter 7 - Thank Scene -->
+<!-- ===================================================== -->
+
+<div id="thankScene">
+
+    <img
+        id="thankImage"
+        src="images/Thank.png"
+        alt="Thank You">
+
+    <div id="thanksButton">
+
+        ကျေးဇူး ကိုကို
+
+    </div>
+
+</div>
+
+
+
+<!-- ===================================================== -->
+<!-- Chapter 8 - Scene 2 -->
+<!-- ===================================================== -->
+
+<video
+    id="scene2Video"
+    preload="auto">
+
+    <source
+        src="video/Scene2.mp4"
+        type="video/mp4">
+
+</video>
+
+<!-- ===================================================== -->
+<!-- Chapter 9 - Scene 3 -->
+<!-- ===================================================== -->
+
+<video
+    id="scene3Video"
+    preload="auto">
+
+    <source
+        src="video/Scene3.mp4"
+        type="video/mp4">
+
+</video>
+
+<!-- ===================================================== -->
+<!-- Chapter 10 - Cook Scene -->
+<!-- ===================================================== -->
+
+<div id="cookScene">
+
+    <img
+        id="cookImage"
+        src="images/Cook.png">
+
+    <div id="cookButton">
+
+        အင်းကိုကို သဲဗိုက်ဆာနေပြီ
+
+    </div>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- Chapter 11 - Scene 4 -->
+<!-- ===================================================== -->
+
+<video
+    id="scene4Video"
+    preload="auto">
+
+    <source
+        src="video/Scene4.mp4"
+        type="video/mp4">
+
+</video>
+<!-- ===================================================== -->
+<!-- Chapter 12 - Dining Hold -->
+<!-- ===================================================== -->
+
+<div id="scene4Hold">
+
+    <img
+        id="scene4Image"
+        src="images/Scene4.png">
+
+    <div id="scene4Button">
+
+        ဟုတ် ကိုကို
+
+    </div>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- Chapter 13 - Scene 5 -->
+<!-- ===================================================== -->
+
+<video
+    id="scene5Video"
+    preload="auto">
+
+    <source
+        src="video/Scene5.mp4"
+        type="video/mp4">
+
+</video>
+<!-- ===================================================== -->
+<!-- Chapter 14 - Scene 5 Hold -->
+<!-- ===================================================== -->
+
+<div id="scene5Hold">
+
+    <img
+        id="scene5Image"
+        src="images/Scene5.png">
+
+    <div id="scene5Button">
+
+        အရမ်းစားကောင်းတာပဲ ကိုကို <br>
+            အရမ်းပျော်တယ်❤️
+
+    </div>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- Chapter 15 - Scene 6 -->
+<!-- ===================================================== -->
+<div id="scene6Hold">
+
+    <img
+        id="scene6Image"
+        src="images/Scene6.png">
+
+    <div id="readNoteButton">
+
+        Open the note
+
+    </div>
+<div id="scene7Button">
+
+    အရမ်းချစ်တယ် ကိုကို❤️
+
+</div>
+</div>
+<video
+    id="scene6Video"
+    preload="auto">
+
+    <source
+        src="video/Scene6.mp4"
+        type="video/mp4">
+
+</video>
+<div id="scene7Hold">
+
+    <img
+        id="scene7Image"
+        src="images/Scene7.png">
+
+    <div id="scene8Button">
+
+        🎧 I have something for us to listen to
+
+    </div>
+
+</div>
+
+<video
+    id="scene7Video"
+    preload="auto">
+
+    <source
+        src="video/Scene7.mp4"
+        type="video/mp4">
+
+</video>
+<video
+    id="scene8Video"
+    preload="auto">
+
+    <source
+        src="video/Scene8.mp4"
+        type="video/mp4">
+
+</video>
+
+<!-- ===================================================== -->
+<!-- Final Ending -->
+<!-- ===================================================== -->
+
+<div id="endingScreen">
+
+    <div id="endingTitle">
+
+        ❤️ Happy 10 Months ❤️
+
+    </div>
+
+    <div id="endingText">
+
+        Thank you for being with me, Babe<br>
+
+        I treasured 
+        every laugh,
+        every call,
+        every memories we have shared together.<br>
+
+        I love you so much ❤️
+
+    </div>
+
+    <div id="replayButton">
+
+        Replay Our Day
+
+    </div>
+
+</div>
+<!-- ===================================================== -->
+<!-- JavaScript -->
+<!-- ===================================================== -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
